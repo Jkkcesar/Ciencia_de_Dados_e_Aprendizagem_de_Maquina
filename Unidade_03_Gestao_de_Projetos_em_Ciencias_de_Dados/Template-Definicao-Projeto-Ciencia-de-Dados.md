@@ -13,8 +13,7 @@
 | Título provisório do projeto |Helping Hands |
 | Curso / disciplina |Sistemas de Informação |
 | Turma |Ciência de Dados e Aprendizagem de Máquina |
-| Equipe |Júlio César de Aguiar Nunes
-Eduardo Salgueiro Evangelista|
+| Equipe |Júlio César de Aguiar Nunes, Eduardo Salgueiro Evangelista|
 | Integrantes e funções iniciais | |
 | Professor(a) |Gabriel |
 | Data de elaboração |16-09-2026 |
@@ -24,8 +23,9 @@ Eduardo Salgueiro Evangelista|
 
 ### 2.1 Resumo do projeto
 
-Em até 100 palavras, apresente o problema, o público-alvo, a proposta de análise e o resultado esperado.
+O "Helping Hands" é uma plataforma WEB resposiva que conecta pessoas interessadas em realizar o descarte consciente a instituições de caridade. Seu objetivo principal é otimizar a logística de doações, garantindo que itens sem uso cheguem de forma rápida e segura a quem precisa.
 
+Criado com tecnologias modernas e fundamentado na economia circular, o projeto soluciona a falta de informação e as dificuldades logísticas enfrentadas pelos doadores. Assim, a iniciativa reduz o desperdício, evita o descarte irregular de materiais úteis e fortalece o terceiro setor por meio de uma ponte digital transparente e eficiente.
 **Preenchimento:**
 
 ________________________________________________________________________________
@@ -37,7 +37,7 @@ ________________________________________________________________________________
 > Nosso projeto utilizará **[dados ou fonte]** para compreender/prever **[fenômeno]**, apoiando **[público ou organização]** na decisão de **[decisão ou ação]**.
 
 **Versão da equipe:**
-
+> Nosso projeto utilizará uma **[Plataforma WEB responsiva]** para otimizar e gerenciar a **[intermediação e a logística de doações]**, apoiando **[pessoas físicas e instituições de caridade]** na decisão de **[realizar o descarte consciente e destinar itens reutilizáveis de forma rápida e segura a quem precisa]**
 ________________________________________________________________________________
 
 ## 3. Contexto e definição do problema
@@ -52,7 +52,18 @@ Descreva a situação atual, o ambiente em que o problema ocorre e as evidência
 - Por que é importante investigá-lo agora?
 
 **Preenchimento:**
-
+3.1 Contexto
+*  Onde o problema ocorre?
+Na sociedade contemporânea, com impacto direto no cenário brasileiro de gestão de resíduos sólidos e de redistribuição de bens de consumo.  
+*  Quem é afetado?
+Pessoas físicas que desejam realizar o descarte consciente de itens que ainda possuem valor de uso (doadores).  Instituições de caridade formalizadas, que dependem de fluxos constantes de mantimentos e doações para manterem suas operações e o apoio ao terceiro setor.  
+*  Quais sinais, dados ou relatos indicam sua existência?
+A geração de 80,95 milhões de toneladas de resíduos sólidos urbanos no Brasil no ano de 2023, sendo que 69,3 milhões de toneladas acabaram descartadas sem passar por um processo de reuso devido à falta de canais de redistribuição (segundo dados de O Globo, 2024).
+A dificuldade logística relatada por potenciais doadores, que enfrentam barreiras como a falta de transporte e o desconhecimento sobre quais instituições aceitam determinados materiais.
+A inadequação das plataformas atuais de mercado (como OLX e Marketplace do Facebook), que têm foco em comércio ou doações informais entre indivíduos e não possuem o foco assistencialista necessário para apoiar entidades formalizadas.
+*  Por que é importante investigá-lo agora?A gestão de resíduos e a necessidade de reaproveitamento tornaram-se desafios críticos tanto para a preservação ambiental quanto para a qualidade de vida.
+O Brasil vive um momento de fortalecimento da cultura de solidariedade, evidenciado pelo salto do país da 89ª posição (edição de 2023) para a 48ª posição (edição de 2025) no ranking global de doações World Giving Index (WGI).
+É o momento ideal para utilizar o avanço tecnológico (aplicativos móveis e acessibilidade digital) para transformar a disposição solidária da população em uma prática estruturada, reduzindo o desperdício e otimizando os recursos escassos das instituições.
 ________________________________________________________________________________
 
 ________________________________________________________________________________
@@ -64,16 +75,20 @@ Formule o problema de maneira específica, sem antecipar uma solução.
 > **Modelo:** [Público/organização] enfrenta [problema observável] no contexto de [situação], produzindo [consequência ou impacto].
 
 **Problema definido:**
+3.2 Problema central
 
+> **[Pessoas físicas interessadas em doar e instituições de caridade]** enfrentam [dificuldades logísticas, como a falta de transporte, e a falta de informação sobre quais entidades aceitam determinados itens] no contexto da **[gestão de resíduos sólidos e do reaproveitamento de bens de consumo]**, produzindo **[o descarte irregular e sem reuso de materiais que ainda possuem valor de uso, gerando desperdício e privando o terceiro setor de mantimentos essenciais]**.
 ________________________________________________________________________________
 
 ### 3.3 Evidências iniciais
 
+### 3.3 Evidências iniciais
+
 | Evidência | Fonte | O que ela indica? | Confiabilidade / limitação |
-|---|---|---|---|
-| 1. | | | |
-| 2. | | | |
-| 3. | | | |
+| :--- | :--- | :--- | :--- |
+| **1.** A geração de resíduos sólidos no Brasil atingiu 80,95 milhões de toneladas em 2023, sendo que 69,3 milhões de toneladas foram descartadas sem passar por processo de reuso devido à falta de canais de redistribuição[cite: 1]. | O Globo (2024)[cite: 1] | Indica que há um enorme volume de desperdício e uma falha logística ou ausência de meios eficientes para conectar os itens descartados a um novo ciclo de utilidade[cite: 1]. | **Confiabilidade alta**, por se tratar de um grande veículo de comunicação[cite: 1]. **Limitação:** O dado é macro e reflete resíduos sólidos em geral, não detalhando exatamente qual fatia desse montante corresponde a itens residenciais em bom estado que poderiam ser doados[cite: 1]. |
+| **2.** O Terceiro Setor movimenta anualmente cerca de US$ 10 bilhões (equivalente a 1,5% do PIB) e gera aproximadamente 2,5% dos postos de trabalho no país[cite: 1]. | Ramos (2003)[cite: 1] | Evidencia a forte relevância social e econômica do terceiro setor e das instituições de caridade no Brasil, justificando a necessidade de ferramentas tecnológicas para apoiar e fortalecer essas entidades[cite: 1]. | **Confiabilidade alta** no viés acadêmico[cite: 1]. **Limitação:** Os dados são do ano de 2003, o que significa que os números atuais do impacto econômico do setor podem estar desatualizados em relação ao cenário de 2026[cite: 1]. |
+| **3.** O Brasil saltou da 89ª posição no ano de 2023 para a 48ª posição em 2025 no ranking mundial de solidariedade, mostrando um crescimento contínuo na cultura de doações[cite: 1]. | World Giving Index (WGI, 2025) publicado pela Charities Aid Foundation (CAF) e IDIS (2023, 2024)[cite: 1] | Indica que a sociedade civil brasileira está cada vez mais disposta a ser solidária e que essa cultura de doação está se tornando mais estruturada, em grande parte facilitada por ferramentas digitais[cite: 1]. | **Confiabilidade alta**, por ser o principal índice global do setor (WGI)[cite: 1]. **Limitação:** O índice foca em pilares mais amplos (doação de dinheiro, ajuda a estranhos e voluntariado), e não mede exclusivamente a doação de bens materiais e itens usados[cite: 1]. |
 
 ## 4. Público-alvo e partes interessadas
 
