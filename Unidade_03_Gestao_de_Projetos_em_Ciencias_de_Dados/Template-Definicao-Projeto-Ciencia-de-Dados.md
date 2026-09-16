@@ -10,14 +10,15 @@
 
 | Campo | Preenchimento |
 |---|---|
-| Título provisório do projeto | |
-| Curso / disciplina | |
-| Turma | |
-| Equipe | |
+| Título provisório do projeto |Helping Hands |
+| Curso / disciplina |Sistemas de Informação |
+| Turma |Ciência de Dados e Aprendizagem de Máquina |
+| Equipe |Júlio César de Aguiar Nunes
+Eduardo Salgueiro Evangelista|
 | Integrantes e funções iniciais | |
-| Professor(a) | |
-| Data de elaboração | |
-| Versão do documento | |
+| Professor(a) |Gabriel |
+| Data de elaboração |16-09-2026 |
+| Versão do documento |V01 |
 
 ## 2. Visão geral
 
