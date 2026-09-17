@@ -261,8 +261,7 @@ Defina como a equipe saberá se o projeto alcançou seus objetivos.
 
 | Risco | Probabilidade | Impacto | Estratégia de resposta | Responsável |
 |---|---|---|---|---|
-|Baixo volume de dados transacionais reais devido ao projeto estar em fase de prototipagem/desenvolvimento. | Alta | Alto |Utilizar dados simulados/sintéticos coerentes com o dicionário do banco helping_hands
- e enriquecer as análises com dados públicos reais (IPEA, SINIR). |Júlio César / Eduardo Salgueiro. |
+|Baixo volume de dados transacionais reais devido ao projeto estar em fase de prototipagem/desenvolvimento. | Alta | Alto |Utilizar dados simulados/sintéticos coerentes com o dicionário do banco helping_hands e enriquecer as análises com dados públicos reais (IPEA, SINIR). |Júlio César / Eduardo Salgueiro. |
 | Inconsistência ou desatualização nas bases públicas (ex.: ONGs inativas mapeadas no IPEA ou subnotificação regional no SINIR). | Média | Médio |Implementar rotinas de higienização no ETL, aplicando filtros de validação cadastral e descartando registros com lacunas críticas de localização ou CNPJ. |Júlio César / Eduardo Salgueiro. |
 |Exposição indevida de dados pessoais de doadores (CPF, telefone, endereço) em desconformidade com a LGPD. | Baixa | Alto |Aplicar hash em credenciais, restringir a exibição de endereços exatos nas telas públicas e manipular dados socioeconômicos socioambientais de forma agregada. |Júlio César / Eduardo Salgueiro. |
 
@@ -270,10 +269,8 @@ Defina como a equipe saberá se o projeto alcançou seus objetivos.
 
 | Integrante | Papel principal | Responsabilidades | Apoio necessário |
 |---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+|Júlio César de Aguiar Nunes. |Desenvolvedor e engenheiro de software. |Levantamento de requisitos, modelagem relacional do banco de dados MySQL, prototipagem e implementação das interfaces web responsivas e documentação técnica do tcc. |Orientação do professor em modelagem estatística, validação das regras de negócio e Suporte em testes de usabilidade de interface |
+|Eduardo Salgueiro Evangelista |Desenvolvedor e engenheiro de software. |Levantamento de requisitos, modelagem relacional do banco de dados MySQL, prototipagem e implementação das interfaces web responsivas e documentação técnica do tcc. |Orientação do professor em modelagem estatística, validação das regras de negócio e Suporte em testes de usabilidade de interface. |
 
 ## 15. Validação da definição do projeto
 
