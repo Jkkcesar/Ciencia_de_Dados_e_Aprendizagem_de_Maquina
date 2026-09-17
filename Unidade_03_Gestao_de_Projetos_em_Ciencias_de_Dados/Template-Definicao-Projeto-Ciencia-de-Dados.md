@@ -198,15 +198,16 @@ Registre suposições que serão investigadas, sem apresentá-las como conclusõ
 
 **Cuidados específicos deste projeto:**
 
-Internamente, a plataforma web do Helping Hands gerencia diretamente dados transacionais e pessoais sensíveis (CPF, e-mail, telefone e endereço detalhado com logradouro dos doadores), exigindo rotinas robustas de segurança, uso de hashes criptográficos para senhas e coleta de consentimento explícito dos termos e da LGPD para ativar a conta.
-No entanto, no escopo das fontes de dados externas utilizadas para cruzamento e inteligência (como o Cadastro Único e o IPEA), o grande risco ético reside na manipulação de informações socioeconômicas.
+Armazenamento de senhas obrigatoriamente criptografadas em formato hash (senha_hash) e controle estrito de acessos por perfil.
+Registro e rastreabilidade do consentimento explícito aos termos da LGPD (aceite_lgpd e data_aceite_lgpd).
+Preservação da privacidade dos doadores, mantendo o endereço exato e a localização ocultos para consultas públicas e exibindo-os somente após o estabelecimento de um agendamento formal.
 ## 9. Escopo do projeto
 
 | Dentro do escopo | Fora do escopo |
 |---|---|
-| | |
-| | |
-| | |
+|1. Especificação, modelagem e prototipagem da plataforma web responsiva (PHP, MySQL, Bootstrap) para intermediação entre doadores e instituições.|1. Desenvolvimento de aplicativos móveis nativos (Android/iOS) ou envio de notificações push para smartphones.|
+|2. Funcionalidades de cadastro e gestão de usuários (doadores, ONGs, administradores) e fluxo de validação cadastral das instituições.|2. Integração automatizada com gateway bancário/API para processamento financeiro de Pix (mantido apenas o registro manual/chave Pix).|
+|3. Mapeamento de doações de bens materiais e cadastro de necessidades institucionais por categoria e prioridade.	|3. Módulo de logística de transporte próprio ou integração automatizada de frete com empresas terceirizadas/transportadoras.|
 
 **Restrições conhecidas:** tempo, acesso a dados, ferramentas, infraestrutura, conhecimento técnico ou normas.
 
