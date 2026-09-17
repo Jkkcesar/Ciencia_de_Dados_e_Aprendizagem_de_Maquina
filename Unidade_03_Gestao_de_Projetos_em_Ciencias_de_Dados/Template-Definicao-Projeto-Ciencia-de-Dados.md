@@ -175,26 +175,26 @@ Registre suposições que serão investigadas, sem apresentá-las como conclusõ
 
 | Conjunto ou fonte de dados | Variáveis principais | Formato | Acesso / responsável | Qualidade esperada |
 |---|---|---|---|---|
-| | | | | |
-| | | | | |
-| | | | | |
+|Mapa das Organizações da Sociedade Civil (IPEA). |Nome da instituição, CNPJ, localização (cidade/estado), finalidade/área de atuação, status de regularidade e natureza jurídica. |CSV / JSON |Público / Instituto de Pesquisa Econômica Aplicada (IPEA). |Média/Alta (sujeita a eventuais desatualizações no status ativo e dados de contato das entidades locais). |
+|Sistema Nacional de Informações sobre a Gestão dos Resíduos Sólidos (SINIR/MMA). |Volume de resíduos sólidos declarados, categorias de materiais, município gerador, destinação final e manifestos de transporte de resíduos (MTR). |CSV / Painéis Abertos |Público / Ministério do Meio Ambiente e Mudança do Clima. |Alta (base de consolidação oficial de declarações de estados e municípios sobre gestão ambiental). |
+|Painel de Dados do Cadastro Único (SAGICAD / Ministério do Desenvolvimento e Assistência Social). |Número de famílias em situação de pobreza ou extrema pobreza, renda per capita, localização geográfica (município/bairro) e perfil de vulnerabilidade socioterritorial. |CSV / API / Dashboards |Público / Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS). |Alta (base demográfica e socioeconômica oficial primária de planejamento de assistência social do Governo Federal). |
 
 ### 8.1 Avaliação inicial dos dados
 
-- **Disponibilidade:** __________________________________________________________
-- **Volume e período coberto:** __________________________________________________
-- **Dados ausentes, duplicados ou inconsistentes previstos:** ______________________
-- **Necessidade de integração entre fontes:** _____________________________________
-- **Restrições legais, contratuais ou institucionais:** _____________________________
+- **Disponibilidade:**Todos os conjuntos de dados propostos estão em domínio público e são disponibilizados ativamente na internet por órgãos federais brasileiros (IPEA, MMA e MDS) por meio de portais de transparência e dados abertos (API e arquivos estruturados).
+- **Volume e período coberto:** O SINIR conta com dados históricos da gestão de mais de 80,96 milhões de toneladas de resíduos e milhões de manifestos no cenário nacional. O IPEA mapeia centenas de milhares de Organizações da Sociedade Civil. O Painel do Cadastro Único cobre dados demográficos agregados de milhões de famílias brasileiras em situação de vulnerabilidade em todos os municípios do país, com atualização contínua.
+- **Dados ausentes, duplicados ou inconsistentes previstos:**No Mapa das OSCs pode haver atraso na atualização quando instituições encerram suas atividades informalmente. No SINIR, existe a ocorrência de subnotificação oriunda de municípios que falham no envio das declarações. Nas bases do CadÚnico, pode ocorrer defasagem local caso os municípios atrasem os recadastramentos periódicos das famílias.
+- **Necessidade de integração entre fontes:** Será necessário integrar essas informações geográficas para gerar um verdadeiro "mapa de calor" da solidariedade. Ao cruzar as localizações e categorias de atuação das instituições do IPEA  com as regiões de alta vulnerabilidade mapeadas pelo Cadastro Único, a plataforma poderá focar seus esforços logísticos e direcionar os doadores  para as áreas com a maior urgência social, alinhando-se diretamente à perspectiva da economia da solidariedade e ao fomento da diminuição da pobreza estrutural e do descarte inteligente.
+- **Restrições legais, contratuais ou institucionais:** Tratando-se de bases de governo abertas, o principal rigor exigido na manipulação dos dados é o estrito cumprimento da Lei Geral de Proteção de Dados Pessoais (LGPD), especialmente no que tange aos microdados socioeconômicos para evitar qualquer chance de reidentificação de pessoas em vulnerabilidade.
 
 ### 8.2 Privacidade, ética e segurança
 
-- [ ] A equipe verificou se há dados pessoais ou sensíveis.
-- [ ] A coleta e o uso dos dados possuem finalidade legítima e explícita.
-- [ ] O acesso será limitado às pessoas autorizadas.
-- [ ] Dados pessoais serão minimizados, anonimizados ou pseudonimizados quando necessário.
-- [ ] Possíveis vieses e impactos sobre grupos serão analisados.
-- [ ] A divulgação dos resultados evitará reidentificação ou exposição indevida.
+- [X] A equipe verificou se há dados pessoais ou sensíveis.
+- [X] A coleta e o uso dos dados possuem finalidade legítima e explícita.
+- [X] O acesso será limitado às pessoas autorizadas.
+- [X] Dados pessoais serão minimizados, anonimizados ou pseudonimizados quando necessário.
+- [X] Possíveis vieses e impactos sobre grupos serão analisados.
+- [X] A divulgação dos resultados evitará reidentificação ou exposição indevida.
 
 **Cuidados específicos deste projeto:**
 
