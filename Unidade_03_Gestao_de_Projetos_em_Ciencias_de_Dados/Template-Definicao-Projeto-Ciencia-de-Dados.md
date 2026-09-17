@@ -226,8 +226,7 @@ Infraestrutura tecnológica: Ausência de serviços de geolocalização e rotrot
 | Base tratada |Consolidação e limpeza dos dados transacionais da aplicação , integrados a referências geográficas e socioeconômicas públicas (IPEA e Cadastro Único/MDS). |Scripts SQL / Tabelas Relacionais . |Júlio César / Eduardo Salgueiro. |Ausência de registros órfãos, preservação da integridade referencial via chaves FK/PK e garantia de anonimização conforme a LGPD. |
 | Análise exploratória |Estudo do grau de alinhamento entre as doações ofertadas e as necessidades urgentes das ONGs, funil de conversão das etapas de doação e tempo médio de repasse. |Relatório Analítico. |Júlio César / Eduardo Salgueiro. |Identificação clara dos principais gargalos logísticos e mapeamento do perfil de demandas do Terceiro Setor. |
 | Visualizações / painel |Interfaces de monitoramento com indicadores de doações disponíveis, processos em andamento, alertas de agendamento e histórico por protocolo para doadores, ONGs e administradores. |Interfaces Web Responsivas (PHP / Bootstrap). |Júlio César / Eduardo Salgueiro. |Exibição em tempo real das métricas operacionais e navegação fluida nos três perfis de acesso da plataforma. |
-| Relatório ou apresentação |Documentação técnica e científica completa, contemplando levantamento de requisitos, diagramas de casos de uso (UML), DER, dicionário de dados e protótipos das interfaces. |Documento escrito (TCC) em PDF. |Júlio César / Eduardo Salgueiro
-. |Aprovação na disciplina e conformidade com a estrutura acadêmica da ABNT. |
+| Relatório ou apresentação |Documentação técnica e científica completa, contemplando levantamento de requisitos, diagramas de casos de uso (UML), DER, dicionário de dados e protótipos das interfaces. |Documento escrito (TCC) em PDF. |Júlio César / Eduardo Salgueiro. |Aprovação na disciplina e conformidade com a estrutura acadêmica da ABNT. |
 | Outro |Aplicação web responsiva para intermediação de doações, com cadastro de donativos/necessidades, chat interno, agendamento de coletas e confirmações rastreáveis. |Código-fonte web (PHP, HTML, CSS, JS, MySQL na AWS). |Júlio César / Eduardo Salgueiro. |Funcionamento estável dos fluxos de ponta a ponta. |
 
 ## 11. Critérios de sucesso
@@ -236,30 +235,36 @@ Defina como a equipe saberá se o projeto alcançou seus objetivos.
 
 | Critério | Indicador ou evidência | Meta | Forma de verificação |
 |---|---|---|---|
-| Relevância para o problema | | | |
-| Qualidade dos dados | | | |
-| Qualidade da análise | | | |
-| Utilidade para o público-alvo | | | |
-| Comunicação dos resultados | | | |
+| Relevância para o problema |Taxa de atendimento das necessidades urgentes e de alta prioridade cadastradas pelas instituições de caridade
+. |Elevar a cobertura e o alinhamento entre as ofertas dos doadores e os itens prioritários solicitados pelas ONGs. |Análise cruzada entre as tabelas donativos e necessidades_instituicao no banco relacional helping_hands
+. |
+| Qualidade dos dados |ntegridade referencial do banco de dados MySQL, senhas armazenadas em hash e privacidade conforme a LGPD. |100% das chaves (PK/FK) validadas e ausência de dados pessoais sensíveis expostos publicamente. |Execução de scripts de auditoria SQL e verificação das rotinas de segurança e privacidade do sistema. |
+| Qualidade da análise |Mensuração do tempo médio (lead time) do ciclo de doação e identificação dos pontos de desistência no funil de intermediação. |Mapear precisamente o tempo total do ciclo e determinar em qual etapa (interesse, agendamento ou entrega) ocorrem os cancelamentos. |Relatórios analíticos e consultas SQL baseadas nos registros das tabelas agendamentos_doacao e historico_acoes. |
+| Utilidade para o público-alvo |Conclusão do fluxo de intermediação de doações de ponta a ponta (publicação, chat, agendamento, entrega e recebimento). |Garantir usabilidade fluida e funcionamento correto nos três perfis de acesso (doador, instituição e administrador). |Testes funcionais de navegação e validação dos protótipos de interfaces web responsivas da plataforma
+. |
+| Comunicação dos resultados |Rigor técnico na documentação (levantamento de requisitos, diagramas UML, DER e dicionário de dados) e clareza na apresentação. |Aprovação na disciplina e conformidade técnica integral com a estrutura acadêmica solicitada. |Avaliação do documento final do projeto e validação pela banca/orientador
+. |
 
 ## 12. Plano inicial de trabalho
 
 | Etapa | Atividades principais | Responsável(is) | Prazo | Dependências |
 |---|---|---|---|---|
-| 1. Definição | | | | |
-| 2. Obtenção dos dados | | | | |
-| 3. Preparação dos dados | | | | |
-| 4. Análise / modelagem | | | | |
-| 5. Validação | | | | |
-| 6. Comunicação | | | | |
+| 1. Definição |Mapeamento do problema central, delimitação do escopo, levantamento dos requisitos do sistema e estruturação das perguntas de negócio e hipóteses. |Júlio César / Eduardo Salgueiro. |Semanas 1 e 2. |Nenhum (etapa inicial). |
+| 2. Obtenção dos dados |Mapeamento e extração dos dados transacionais do banco MySQL (helping_hands), acompanhados da captação de dados públicos abertos do IPEA, SINIR/MMA e Cadastro Único/MDS. |Júlio César / Eduardo Salgueiro. |Semanas 3 e 4. |Definição das perguntas de negócio e da estrutura das tabelas. |
+| 3. Preparação dos dados |Limpeza de registros inconsistentes, padronização de endereços, anonimização de dados sensíveis conforme a LGPD e integração entre fontes via chaves relacionais. |Júlio César / Eduardo Salgueiro. |Semanas 5 e 6. |Disponibilização dos conjuntos de dados brutos. |
+| 4. Análise / modelagem |Análise exploratória do cruzamento entre oferta e demanda urgente, avaliação do funil de conversão das doações, cálculo do tempo médio (lead time) e mapeamento territorial. |Júlio César / Eduardo Salgueiro. |Semanas 7 e 8. |Base de dados integrada, tratada e sanitizada. |
+| 5. Validação |Verificação dos resultados analíticos frente aos critérios de sucesso, testes funcionais de navegação no protótipo web e auditoria das regras de integridade do banco de dados. |Júlio César / Eduardo Salgueiro. |Semanas 9 e 10. |Conclusão das análises e disponibilização das interfaces do protótipo. |
+| 6. Comunicação |Redação do relatório técnico e acadêmico (TCC), estruturação das visualizações gráficas e preparação da apresentação para a banca examinadora. |Júlio César / Eduardo Salgueiro. |Semanas 11 e 12. |Validação final dos dados e consolidação dos resultados
+. |
 
 ## 13. Riscos do projeto
 
 | Risco | Probabilidade | Impacto | Estratégia de resposta | Responsável |
 |---|---|---|---|---|
-| | Baixa / Média / Alta | Baixo / Médio / Alto | | |
-| | Baixa / Média / Alta | Baixo / Médio / Alto | | |
-| | Baixa / Média / Alta | Baixo / Médio / Alto | | |
+|Baixo volume de dados transacionais reais devido ao projeto estar em fase de prototipagem/desenvolvimento. | Alta | Alto |Utilizar dados simulados/sintéticos coerentes com o dicionário do banco helping_hands
+ e enriquecer as análises com dados públicos reais (IPEA, SINIR). |Júlio César / Eduardo Salgueiro. |
+| Inconsistência ou desatualização nas bases públicas (ex.: ONGs inativas mapeadas no IPEA ou subnotificação regional no SINIR). | Média | Médio |Implementar rotinas de higienização no ETL, aplicando filtros de validação cadastral e descartando registros com lacunas críticas de localização ou CNPJ. |Júlio César / Eduardo Salgueiro. |
+|Exposição indevida de dados pessoais de doadores (CPF, telefone, endereço) em desconformidade com a LGPD. | Baixa | Alto |Aplicar hash em credenciais, restringir a exibição de endereços exatos nas telas públicas e manipular dados socioeconômicos socioambientais de forma agregada. |Júlio César / Eduardo Salgueiro. |
 
 ## 14. Organização da equipe
 
