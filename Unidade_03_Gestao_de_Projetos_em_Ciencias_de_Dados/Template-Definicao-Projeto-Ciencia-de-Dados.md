@@ -235,9 +235,7 @@ Defina como a equipe saberá se o projeto alcançou seus objetivos.
 
 | Critério | Indicador ou evidência | Meta | Forma de verificação |
 |---|---|---|---|
-| Relevância para o problema |Taxa de atendimento das necessidades urgentes e de alta prioridade cadastradas pelas instituições de caridade
-. |Elevar a cobertura e o alinhamento entre as ofertas dos doadores e os itens prioritários solicitados pelas ONGs. |Análise cruzada entre as tabelas donativos e necessidades_instituicao no banco relacional helping_hands
-. |
+| Relevância para o problema |Taxa de atendimento das necessidades urgentes e de alta prioridade cadastradas pelas instituições de caridade. |Elevar a cobertura e o alinhamento entre as ofertas dos doadores e os itens prioritários solicitados pelas ONGs. |Análise cruzada entre as tabelas donativos e necessidades_instituicao no banco relacional helping_hands. |
 | Qualidade dos dados |ntegridade referencial do banco de dados MySQL, senhas armazenadas em hash e privacidade conforme a LGPD. |100% das chaves (PK/FK) validadas e ausência de dados pessoais sensíveis expostos publicamente. |Execução de scripts de auditoria SQL e verificação das rotinas de segurança e privacidade do sistema. |
 | Qualidade da análise |Mensuração do tempo médio (lead time) do ciclo de doação e identificação dos pontos de desistência no funil de intermediação. |Mapear precisamente o tempo total do ciclo e determinar em qual etapa (interesse, agendamento ou entrega) ocorrem os cancelamentos. |Relatórios analíticos e consultas SQL baseadas nos registros das tabelas agendamentos_doacao e historico_acoes. |
 | Utilidade para o público-alvo |Conclusão do fluxo de intermediação de doações de ponta a ponta (publicação, chat, agendamento, entrega e recebimento). |Garantir usabilidade fluida e funcionamento correto nos três perfis de acesso (doador, instituição e administrador). |Testes funcionais de navegação e validação dos protótipos de interfaces web responsivas da plataforma
