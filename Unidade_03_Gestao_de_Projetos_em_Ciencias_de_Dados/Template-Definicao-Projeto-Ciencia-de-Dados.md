@@ -181,9 +181,9 @@ Registre suposições que serão investigadas, sem apresentá-las como conclusõ
 
 ### 8.1 Avaliação inicial dos dados
 
-- **Disponibilidade:**Todos os conjuntos de dados propostos estão em domínio público e são disponibilizados ativamente na internet por órgãos federais brasileiros (IPEA, MMA e MDS) por meio de portais de transparência e dados abertos (API e arquivos estruturados).
+- **Disponibilidade:** Todos os conjuntos de dados propostos estão em domínio público e são disponibilizados ativamente na internet por órgãos federais brasileiros (IPEA, MMA e MDS) por meio de portais de transparência e dados abertos (API e arquivos estruturados).
 - **Volume e período coberto:** O SINIR conta com dados históricos da gestão de mais de 80,96 milhões de toneladas de resíduos e milhões de manifestos no cenário nacional. O IPEA mapeia centenas de milhares de Organizações da Sociedade Civil. O Painel do Cadastro Único cobre dados demográficos agregados de milhões de famílias brasileiras em situação de vulnerabilidade em todos os municípios do país, com atualização contínua.
-- **Dados ausentes, duplicados ou inconsistentes previstos:**No Mapa das OSCs pode haver atraso na atualização quando instituições encerram suas atividades informalmente. No SINIR, existe a ocorrência de subnotificação oriunda de municípios que falham no envio das declarações. Nas bases do CadÚnico, pode ocorrer defasagem local caso os municípios atrasem os recadastramentos periódicos das famílias.
+- **Dados ausentes, duplicados ou inconsistentes previstos:** No Mapa das OSCs pode haver atraso na atualização quando instituições encerram suas atividades informalmente. No SINIR, existe a ocorrência de subnotificação oriunda de municípios que falham no envio das declarações. Nas bases do CadÚnico, pode ocorrer defasagem local caso os municípios atrasem os recadastramentos periódicos das famílias.
 - **Necessidade de integração entre fontes:** Será necessário integrar essas informações geográficas para gerar um verdadeiro "mapa de calor" da solidariedade. Ao cruzar as localizações e categorias de atuação das instituições do IPEA  com as regiões de alta vulnerabilidade mapeadas pelo Cadastro Único, a plataforma poderá focar seus esforços logísticos e direcionar os doadores  para as áreas com a maior urgência social, alinhando-se diretamente à perspectiva da economia da solidariedade e ao fomento da diminuição da pobreza estrutural e do descarte inteligente.
 - **Restrições legais, contratuais ou institucionais:** Tratando-se de bases de governo abertas, o principal rigor exigido na manipulação dos dados é o estrito cumprimento da Lei Geral de Proteção de Dados Pessoais (LGPD), especialmente no que tange aos microdados socioeconômicos para evitar qualquer chance de reidentificação de pessoas em vulnerabilidade.
 
@@ -198,8 +198,8 @@ Registre suposições que serão investigadas, sem apresentá-las como conclusõ
 
 **Cuidados específicos deste projeto:**
 
-________________________________________________________________________________
-
+Internamente, a plataforma web do Helping Hands gerencia diretamente dados transacionais e pessoais sensíveis (CPF, e-mail, telefone e endereço detalhado com logradouro dos doadores), exigindo rotinas robustas de segurança, uso de hashes criptográficos para senhas e coleta de consentimento explícito dos termos e da LGPD para ativar a conta.
+No entanto, no escopo das fontes de dados externas utilizadas para cruzamento e inteligência (como o Cadastro Único e o IPEA), o grande risco ético reside na manipulação de informações socioeconômicas.
 ## 9. Escopo do projeto
 
 | Dentro do escopo | Fora do escopo |
