@@ -269,7 +269,7 @@ Defina como a equipe saberá se o projeto alcançou seus objetivos.
 
 | Integrante | Papel principal | Responsabilidades | Apoio necessário |
 |---|---|---|---|
-|Júlio César de Aguiar Nunes. |Desenvolvedor e engenheiro de software. |Levantamento de requisitos, modelagem relacional do banco de dados MySQL, prototipagem e implementação das interfaces web responsivas e documentação técnica do tcc. |Orientação do professor em modelagem estatística, validação das regras de negócio e Suporte em testes de usabilidade de interface |
+|C de Aguiar Nunes. |Desenvolvedor e engenheiro de software. |Levantamento de requisitos, modelagem relacional do banco de dados MySQL, prototipagem e implementação das interfaces web responsivas e documentação técnica do tcc. |Orientação do professor em modelagem estatística, validação das regras de negócio e Suporte em testes de usabilidade de interface |
 |Eduardo Salgueiro Evangelista |Desenvolvedor e engenheiro de software. |Levantamento de requisitos, modelagem relacional do banco de dados MySQL, prototipagem e implementação das interfaces web responsivas e documentação técnica do tcc. |Orientação do professor em modelagem estatística, validação das regras de negócio e Suporte em testes de usabilidade de interface. |
 
 ## 15. Validação da definição do projeto
@@ -279,19 +279,19 @@ Antes da entrega, confirme:
 - [X] O problema é real, relevante e delimitado.
 - [X] O público-alvo e as partes interessadas estão identificados.
 - [X] O objetivo geral e os objetivos específicos são coerentes.
-- [ ] As perguntas de negócio orientam decisões concretas.
-- [ ] Há dados potencialmente disponíveis para responder às perguntas.
-- [ ] O escopo é compatível com o prazo e os recursos.
-- [ ] Os critérios de sucesso são mensuráveis.
-- [ ] Riscos, privacidade, ética e segurança foram considerados.
-- [ ] Funções e responsabilidades foram distribuídas.
+- [X] As perguntas de negócio orientam decisões concretas.
+- [X] Há dados potencialmente disponíveis para responder às perguntas.
+- [X] O escopo é compatível com o prazo e os recursos.
+- [X] Os critérios de sucesso são mensuráveis.
+- [X] Riscos, privacidade, ética e segurança foram considerados.
+- [X] Funções e responsabilidades foram distribuídas.
 
 ## 16. Aprovação e registro de ajustes
 
 | Responsável | Validação / observação | Data |
 |---|---|---|
-| Representante da equipe | | |
-| Professor(a) / orientador(a) | | |
+| Representante da equipe(Júlio César / Eduardo Salgueiro) |Definição inicial do projeto concluída e alinhada ao escopo do TCC. |17/09/2026 |
+| Professor(a) / orientador(a)(Gabriel) |Proposta aprovada para desenvolvimento e acompanhamento da disciplina |17/09/2026 |
 
 ### Ajustes solicitados após a apresentação inicial
 
