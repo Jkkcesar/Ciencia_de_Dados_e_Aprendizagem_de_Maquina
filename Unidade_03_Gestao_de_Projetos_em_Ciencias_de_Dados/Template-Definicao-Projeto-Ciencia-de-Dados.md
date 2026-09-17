@@ -223,11 +223,12 @@ Infraestrutura tecnológica: Ausência de serviços de geolocalização e rotrot
 
 | Entregável | Descrição | Formato | Responsável | Critério de aceite |
 |---|---|---|---|---|
-| Base tratada | | | | |
-| Análise exploratória | | | | |
-| Visualizações / painel | | | | |
-| Relatório ou apresentação | | | | |
-| Outro | | | | |
+| Base tratada |Consolidação e limpeza dos dados transacionais da aplicação , integrados a referências geográficas e socioeconômicas públicas (IPEA e Cadastro Único/MDS). |Scripts SQL / Tabelas Relacionais . |Júlio César / Eduardo Salgueiro. |Ausência de registros órfãos, preservação da integridade referencial via chaves FK/PK e garantia de anonimização conforme a LGPD. |
+| Análise exploratória |Estudo do grau de alinhamento entre as doações ofertadas e as necessidades urgentes das ONGs, funil de conversão das etapas de doação e tempo médio de repasse. |Relatório Analítico. |Júlio César / Eduardo Salgueiro. |Identificação clara dos principais gargalos logísticos e mapeamento do perfil de demandas do Terceiro Setor. |
+| Visualizações / painel |Interfaces de monitoramento com indicadores de doações disponíveis, processos em andamento, alertas de agendamento e histórico por protocolo para doadores, ONGs e administradores. |Interfaces Web Responsivas (PHP / Bootstrap). |Júlio César / Eduardo Salgueiro. |Exibição em tempo real das métricas operacionais e navegação fluida nos três perfis de acesso da plataforma. |
+| Relatório ou apresentação |Documentação técnica e científica completa, contemplando levantamento de requisitos, diagramas de casos de uso (UML), DER, dicionário de dados e protótipos das interfaces. |Documento escrito (TCC) em PDF. |Júlio César / Eduardo Salgueiro
+. |Aprovação na disciplina e conformidade com a estrutura acadêmica da ABNT. |
+| Outro |Aplicação web responsiva para intermediação de doações, com cadastro de donativos/necessidades, chat interno, agendamento de coletas e confirmações rastreáveis. |Código-fonte web (PHP, HTML, CSS, JS, MySQL na AWS). |Júlio César / Eduardo Salgueiro. |Funcionamento estável dos fluxos de ponta a ponta. |
 
 ## 11. Critérios de sucesso
 
