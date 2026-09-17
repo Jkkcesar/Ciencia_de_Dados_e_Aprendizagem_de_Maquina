@@ -82,10 +82,6 @@ ________________________________________________________________________________
 
 ### 3.3 Evidências iniciais
 
-### 3.3 Evidências iniciais
-
-### 3.3 Evidências iniciais
-
 | Evidência | Fonte | O que ela indica? | Confiabilidade / limitação |
 | :--- | :--- | :--- | :--- |
 | **1.** A geração de resíduos sólidos no Brasil atingiu 80,95 milhões de toneladas em 2023, sendo que 69,3 milhões de toneladas foram descartadas sem passar por processo de reuso devido à falta de canais de redistribuição. | O GLOBO. Relatório aponta crescimento da reciclagem de resíduos no Brasil, mas persistência de lixões preocupa. 10 dez. 2024. | Indica que há um enorme volume de desperdício e uma falha logística ou ausência de meios eficientes para conectar os itens descartados a um novo ciclo de utilidade. | **Confiabilidade alta**, por se tratar de um grande veículo de comunicação. **Limitação:** O dado é macro e reflete resíduos sólidos em geral, não detalhando exatamente qual fatia desse montante corresponde a itens residenciais em bom estado que poderiam ser doados. |
