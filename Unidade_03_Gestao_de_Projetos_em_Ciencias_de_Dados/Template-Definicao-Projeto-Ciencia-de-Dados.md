@@ -276,9 +276,9 @@ Defina como a equipe saberá se o projeto alcançou seus objetivos.
 
 Antes da entrega, confirme:
 
-- [ ] O problema é real, relevante e delimitado.
-- [ ] O público-alvo e as partes interessadas estão identificados.
-- [ ] O objetivo geral e os objetivos específicos são coerentes.
+- [X] O problema é real, relevante e delimitado.
+- [X] O público-alvo e as partes interessadas estão identificados.
+- [X] O objetivo geral e os objetivos específicos são coerentes.
 - [ ] As perguntas de negócio orientam decisões concretas.
 - [ ] Há dados potencialmente disponíveis para responder às perguntas.
 - [ ] O escopo é compatível com o prazo e os recursos.
