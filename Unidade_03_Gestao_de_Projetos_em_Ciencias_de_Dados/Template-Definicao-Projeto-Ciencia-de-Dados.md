@@ -211,7 +211,10 @@ Preservação da privacidade dos doadores, mantendo o endereço exato e a locali
 
 **Restrições conhecidas:** tempo, acesso a dados, ferramentas, infraestrutura, conhecimento técnico ou normas.
 
-________________________________________________________________________________
+Prazo acadêmico: Cronograma delimitado pelo período letivo da disciplina e elaboração do projeto.
+Privacidade e LGPD: Obrigatoriedade de aplicar hash em credenciais, ocultar endereços exatos antes do agendamento formal e manipular dados socioeconômicos externos apenas de forma agregada para impedir a re-identificação de pessoas.
+Ambiente de desenvolvimento: Solução desenvolvida como protótipo evolutivo funcional, sem implantação em escala de produção nem validação com grande massa de usuários reais.
+Infraestrutura tecnológica: Ausência de serviços de geolocalização e rotroteamento avançados baseados em cálculo direto de latitude/longitude.
 
 ## 10. Resultados e entregáveis previstos
 
