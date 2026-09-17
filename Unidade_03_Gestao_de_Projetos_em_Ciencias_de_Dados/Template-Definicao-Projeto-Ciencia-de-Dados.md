@@ -168,8 +168,8 @@ Registre suposições que serão investigadas, sem apresentá-las como conclusõ
 | Hipótese | Como poderá ser testada? | Resultado que a refutaria? |
 |---|---|---|
 | H1.A falta de informação gera um descompasso entre os tipos de bens doados pela população e as reais necessidades urgentes das ONGs. |Cruzando o volume de itens doados por categoria com o nível de prioridade informado pelas instituições. |Comprovar que a oferta espontânea de doações coincide com as demandas urgentes das entidades. |
-| H2. | | |
-| H3. | | |
+| H2.A limitação de transporte é a principal barreira logística para a conclusão do repasse de itens em bom estado. |Comparando a taxa de cancelamento entre doações que exigem retirada no local e as entregas realizadas pelo doador. |Identificar que o índice de desistência é igual ou menor quando a retirada depende de transporte da instituição. |
+| H3.A maior distância geográfica entre doador e instituição aumenta o tempo de repasse e o risco de descarte irregular. |Correlacionando a distância física (bairro/cidade) entre as partes com o tempo total (lead time) de conclusão do repasse. |Demonstrar que o tempo de conclusão do repasse é independente da distância física. |
 
 ## 8. Dados necessários e viabilidade
 
