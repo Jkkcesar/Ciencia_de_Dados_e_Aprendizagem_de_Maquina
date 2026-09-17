@@ -96,16 +96,12 @@ ________________________________________________________________________________
 
 ### 4.1 Público-alvo principal
 
-### 4.1 Público-alvo principal
-
 | Aspecto | Descrição |
 | :--- | :--- |
 | **Quem são os usuários ou beneficiários?** | O sistema atende principalmente a dois perfis: pessoas físicas que desejam realizar descartes conscientes (doadores) e instituições de caridade cadastradas e verificadas (donatários). |
 | **Quais necessidades possuem?** | Os doadores necessitam de informações claras sobre quais instituições aceitam determinados itens e de facilidade logística para a entrega. As instituições necessitam de um fluxo constante de mantimentos e de um canal para divulgar suas necessidades específicas (móveis, roupas, alimentos) e gerenciar as doações recebidas de forma organizada. |
 | **Como são afetados pelo problema?** | Os doadores enfrentam barreiras (como falta de transporte ou desconhecimento) que resultam no descarte irregular de materiais que ainda possuem valor de uso. As instituições sofrem com a falta de recursos, pois as plataformas atuais de mercado (como OLX) não possuem o foco assistencialista necessário para suprir suas demandas. |
 | **Que decisão ou ação poderão tomar com os resultados?** | Os doadores poderão cadastrar itens para doação, buscar necessidades de ONGs, agendar entregas e confirmar envios de forma rastreável. As instituições poderão cadastrar suas necessidades, manifestar interesse em donativos disponíveis, agendar o recebimento e confirmar a conclusão da doação com transparência. |
-
-### 4.2 Partes interessadas
 
 ### 4.2 Partes interessadas
 
