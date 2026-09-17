@@ -167,7 +167,7 @@ Registre suposições que serão investigadas, sem apresentá-las como conclusõ
 
 | Hipótese | Como poderá ser testada? | Resultado que a refutaria? |
 |---|---|---|
-| H1. | | |
+| H1.A falta de informação gera um descompasso entre os tipos de bens doados pela população e as reais necessidades urgentes das ONGs. |Cruzando o volume de itens doados por categoria com o nível de prioridade informado pelas instituições. |Comprovar que a oferta espontânea de doações coincide com as demandas urgentes das entidades. |
 | H2. | | |
 | H3. | | |
 
