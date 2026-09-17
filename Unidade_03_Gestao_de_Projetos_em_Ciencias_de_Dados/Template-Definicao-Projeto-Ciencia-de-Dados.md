@@ -84,39 +84,53 @@ ________________________________________________________________________________
 
 ### 3.3 Evidências iniciais
 
+### 3.3 Evidências iniciais
+
 | Evidência | Fonte | O que ela indica? | Confiabilidade / limitação |
 | :--- | :--- | :--- | :--- |
-| **1.** A geração de resíduos sólidos no Brasil atingiu 80,95 milhões de toneladas em 2023, sendo que 69,3 milhões de toneladas foram descartadas sem passar por processo de reuso devido à falta de canais de redistribuição[cite: 1]. | O Globo (2024)[cite: 1] | Indica que há um enorme volume de desperdício e uma falha logística ou ausência de meios eficientes para conectar os itens descartados a um novo ciclo de utilidade[cite: 1]. | **Confiabilidade alta**, por se tratar de um grande veículo de comunicação[cite: 1]. **Limitação:** O dado é macro e reflete resíduos sólidos em geral, não detalhando exatamente qual fatia desse montante corresponde a itens residenciais em bom estado que poderiam ser doados[cite: 1]. |
-| **2.** O Terceiro Setor movimenta anualmente cerca de US$ 10 bilhões (equivalente a 1,5% do PIB) e gera aproximadamente 2,5% dos postos de trabalho no país[cite: 1]. | Ramos (2003)[cite: 1] | Evidencia a forte relevância social e econômica do terceiro setor e das instituições de caridade no Brasil, justificando a necessidade de ferramentas tecnológicas para apoiar e fortalecer essas entidades[cite: 1]. | **Confiabilidade alta** no viés acadêmico[cite: 1]. **Limitação:** Os dados são do ano de 2003, o que significa que os números atuais do impacto econômico do setor podem estar desatualizados em relação ao cenário de 2026[cite: 1]. |
-| **3.** O Brasil saltou da 89ª posição no ano de 2023 para a 48ª posição em 2025 no ranking mundial de solidariedade, mostrando um crescimento contínuo na cultura de doações[cite: 1]. | World Giving Index (WGI, 2025) publicado pela Charities Aid Foundation (CAF) e IDIS (2023, 2024)[cite: 1] | Indica que a sociedade civil brasileira está cada vez mais disposta a ser solidária e que essa cultura de doação está se tornando mais estruturada, em grande parte facilitada por ferramentas digitais[cite: 1]. | **Confiabilidade alta**, por ser o principal índice global do setor (WGI)[cite: 1]. **Limitação:** O índice foca em pilares mais amplos (doação de dinheiro, ajuda a estranhos e voluntariado), e não mede exclusivamente a doação de bens materiais e itens usados[cite: 1]. |
+| **1.** A geração de resíduos sólidos no Brasil atingiu 80,95 milhões de toneladas em 2023, sendo que 69,3 milhões de toneladas foram descartadas sem passar por processo de reuso devido à falta de canais de redistribuição. | O GLOBO. Relatório aponta crescimento da reciclagem de resíduos no Brasil, mas persistência de lixões preocupa. 10 dez. 2024. | Indica que há um enorme volume de desperdício e uma falha logística ou ausência de meios eficientes para conectar os itens descartados a um novo ciclo de utilidade. | **Confiabilidade alta**, por se tratar de um grande veículo de comunicação. **Limitação:** O dado é macro e reflete resíduos sólidos em geral, não detalhando exatamente qual fatia desse montante corresponde a itens residenciais em bom estado que poderiam ser doados. |
+| **2.** O Terceiro Setor movimenta anualmente cerca de US$ 10 bilhões (equivalente a 1,5% do PIB) e gera aproximadamente 2,5% dos postos de trabalho no país. | RAMOS, G. C. Terceiro setor: a construção de uma economia da solidariedade. Revista Ibero-Americana de Estratégia, São Paulo, v. 2, n. 1, p. 105-112, 2003. | Evidencia a forte relevância social e econômica do terceiro setor e das instituições de caridade no Brasil, justificando a necessidade de ferramentas tecnológicas para apoiar e fortalecer essas entidades. | **Confiabilidade alta** no viés acadêmico. **Limitação:** Os dados são do ano de 2003, o que significa que os números atuais do impacto econômico do setor podem estar desatualizados em relação ao cenário de 2026. |
+| **3.** O Brasil saltou da 89ª posição no ano de 2023 para a 48ª posição em 2025 no ranking mundial de solidariedade, mostrando um crescimento contínuo na cultura de doações. | CHARITIES AID FOUNDATION. CAF World Giving Index 2025. Kent: CAF, 2025.<br><br>IDIS – Instituto para o Desenvolvimento do Investimento Social. Pesquisa Doação Brasil. São Paulo: IDIS, 2024. | Indica que a sociedade civil brasileira está cada vez mais disposta a ser solidária e que essa cultura de doação está se tornando mais estruturada, em grande parte facilitada por ferramentas digitais. | **Confiabilidade alta**, por ser o principal índice global do setor (WGI). **Limitação:** O índice foca em pilares mais amplos (doação de dinheiro, ajuda a estranhos e voluntariado), e não mede exclusivamente a doação de bens materiais e itens usados. |
 
 ## 4. Público-alvo e partes interessadas
 
 ### 4.1 Público-alvo principal
 
+### 4.1 Público-alvo principal
+
 | Aspecto | Descrição |
-|---|---|
-| Quem são os usuários ou beneficiários? | |
-| Quais necessidades possuem? | |
-| Como são afetados pelo problema? | |
-| Que decisão ou ação poderão tomar com os resultados? | |
+| :--- | :--- |
+| **Quem são os usuários ou beneficiários?** | O sistema atende principalmente a dois perfis: pessoas físicas que desejam realizar descartes conscientes (doadores) e instituições de caridade cadastradas e verificadas (donatários). |
+| **Quais necessidades possuem?** | Os doadores necessitam de informações claras sobre quais instituições aceitam determinados itens e de facilidade logística para a entrega. As instituições necessitam de um fluxo constante de mantimentos e de um canal para divulgar suas necessidades específicas (móveis, roupas, alimentos) e gerenciar as doações recebidas de forma organizada. |
+| **Como são afetados pelo problema?** | Os doadores enfrentam barreiras (como falta de transporte ou desconhecimento) que resultam no descarte irregular de materiais que ainda possuem valor de uso. As instituições sofrem com a falta de recursos, pois as plataformas atuais de mercado (como OLX) não possuem o foco assistencialista necessário para suprir suas demandas. |
+| **Que decisão ou ação poderão tomar com os resultados?** | Os doadores poderão cadastrar itens para doação, buscar necessidades de ONGs, agendar entregas e confirmar envios de forma rastreável. As instituições poderão cadastrar suas necessidades, manifestar interesse em donativos disponíveis, agendar o recebimento e confirmar a conclusão da doação com transparência. |
+
+### 4.2 Partes interessadas
 
 ### 4.2 Partes interessadas
 
 | Parte interessada | Interesse no projeto | Influência | Forma de envolvimento |
-|---|---|---|---|
-| | | Baixa / Média / Alta | |
-| | | Baixa / Média / Alta | |
-| | | Baixa / Média / Alta | |
+| :--- | :--- | :--- | :--- |
+| **Doadores (Pessoas físicas)** | Encontrar um canal seguro para realizar o descarte consciente e destinar itens sem uso a quem realmente precisa de forma rápida. | Alta | Realização de cadastro de donativos no aplicativo, busca e filtro de instituições/necessidades, agendamento de entregas e confirmação de envio. |
+| **Instituições de caridade (ONGs)** | Manter um fluxo constante de mantimentos para suas operações, divulgando suas demandas críticas de forma organizada e validada. | Alta | Cadastro e gerenciamento de necessidades no painel, manifestação de interesse em donativos, acompanhamento da logística no chat e confirmação de recebimento. |
+| **Administradores da plataforma** | Assegurar a governança, a moderação e a segurança do ecossistema, garantindo que apenas instituições e usuários adequados permaneçam ativos. | Alta | Aprovação e validação de cadastros institucionais, gestão e controle de usuários (banimentos, suspensões), acompanhamento de alertas e suporte via chat administrativo. |
 
 ## 5. Objetivos do projeto
+
+### 5.1 Objetivo Geral
+Desenvolver uma plataforma digital composta por aplicativo e site que automatize e gerencie o processo de intermediação entre doadores e instituições de caridade, otimizando a destinação de itens reutilizáveis através da tecnologia[cite: 1].
+
+### 5.2 Objetivos Específicos
+*   Mapear e cadastrar instituições de caridade, categorizando suas necessidades específicas por tipo de material (móveis, roupas, alimentos).
+*   Implementar um sistema de geolocalização para conectar doadores às instituições mais próximas, reduzindo custos e tempo de deslocamento.
+*   Criar um painel administrativo para as instituições gerenciarem as ofertas de doações recebidas de forma organizada e eficiente.
 
 ### 5.1 Objetivo geral
 
 Escreva um objetivo que indique o que será analisado, para qual finalidade e em qual contexto. Inicie com um verbo no infinitivo.
 
 **Objetivo geral:**
-
+Desenvolver uma plataforma digital, composta por aplicativo e site, para automatizar e gerenciar o processo de intermediação entre doadores e instituições de caridade, com a finalidade de otimizar a destinação de itens reutilizáveis e promover o descarte consciente no contexto de gestão de resíduos sólidos e apoio ao terceiro setor.
 ________________________________________________________________________________
 
 ### 5.2 Objetivos específicos
@@ -124,34 +138,36 @@ ________________________________________________________________________________
 Defina de três a cinco objetivos mensuráveis e compatíveis com o prazo do projeto.
 
 | Nº | Objetivo específico | Evidência de conclusão |
-|---:|---|---|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+|---:| :--- | :--- |
+| **1** | Mapear e cadastrar instituições de caridade, categorizando suas necessidades específicas por tipo de material (móveis, roupas, alimentos). | Presença do módulo de cadastro e validação de instituições pela administração, integrado à funcionalidade "Cadastrar necessidade" onde a instituição define a categoria e prioridade do item. |
+| **2** | Implementar um sistema de geolocalização para conectar doadores às instituições mais próximas, reduzindo custos e tempo de deslocamento. | Armazenamento de dados de endereço, latitude e longitude no banco de dados, além da disponibilização do botão "Abrir no Google Maps" na tela de detalhes da instituição/necessidade. |
+| **3** | Criar um painel administrativo para as instituições gerenciarem as ofertas de doações recebidas de forma organizada e eficiente. | Desenvolvimento e funcionamento da tela "Painel da Instituição", que apresenta indicadores de doações disponíveis, controle de processos em andamento, gestão de agendamentos e histórico de processos. |
 
 ### 5.3 Verificação dos objetivos
 
 Marque após revisar:
 
-- [ ] São específicos e escritos com clareza.
-- [ ] Podem ser verificados por meio de entregáveis ou métricas.
-- [ ] São viáveis com os dados, recursos e tempo disponíveis.
-- [ ] Estão diretamente relacionados ao problema central.
-- [ ] Consideram os usuários e a decisão que será apoiada.
+[x] São específicos e escritos com clareza.
+
+[x] Podem ser verificados por meio de entregáveis ou métricas.
+
+[x] São viáveis com os dados, recursos e tempo disponíveis.
+
+[x] Estão diretamente relacionados ao problema central.
+
+[x] Consideram os usuários e a decisão que será apoiada.
 
 ## 6. Perguntas de negócio
 
 As perguntas de negócio orientam a coleta, a análise e a comunicação dos resultados. Evite perguntas que possam ser respondidas apenas com “sim” ou “não”.
 
 | Nº | Pergunta de negócio | Decisão apoiada | Dados necessários | Análise ou indicador possível |
-|---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
+|---:| :--- | :--- | :--- | :--- |
+| **1** | Como o volume e as categorias de donativos ofertados se alinham com as necessidades de prioridade urgente das instituições? | Direcionar campanhas de incentivo para arrecadar itens específicos que estão em falta e otimizar o atendimento às ONGs. | Tabelas `donativos` (id_categoria, status) e `necessidades_instituicao` (id_categoria, prioridade). | Taxa de cobertura de necessidades (oferta vs. demanda por categoria); percentual de necessidades urgentes atendidas. |
+| **2** | Qual é a taxa de sucesso no ciclo de doação e em qual etapa ocorrem mais cancelamentos (interesse, agendamento ou entrega)? | Identificar gargalos logísticos ou de comunicação para melhorar a usabilidade, os alertas e as regras de agendamento do aplicativo. | Tabelas `agendamentos_doacao` (status, doador_confirmou_entrega, instituicao_confirmou_recebimento) e `historico_acoes`. | Funil de conversão da doação (Publicado > Interesse > Agendado > Entregue); índice de evasão por etapa. |
+| **3** | Qual é o tempo médio que um item leva desde a sua publicação pelo doador até a confirmação de recebimento pela instituição? | Avaliar a agilidade da plataforma e a necessidade de implementar melhorias nos alertas/push notifications para acelerar as retiradas. | Tabelas `donativos` (criado_em) e `agendamentos_doacao` (instituicao_confirmou_em). | *Lead time* da doação (tempo médio em dias/horas do ciclo completo de repasse). |
+| **4** | Como a distribuição geográfica dos itens ofertados se relaciona com a localização das instituições validadas? | Focar a captação de novos doadores ou o cadastramento de novas ONGs em regiões com déficit de atendimento ou excesso de oferta não escoada. | Tabelas `enderecos` (bairro, cidade, latitude, longitude), `doadores` e `instituicoes`. | Mapa de calor (*heatmap*) cruzando locais de retirada com endereços de ONGs; distância média percorrida por doação. |
+| **5** | Qual é a frequência de retorno dos doadores para a realização de novas doações após o primeiro repasse concluído? | Medir a fidelização do usuário para aplicar estratégias de retenção, como o uso dos cupons de incentivo mencionados no escopo do projeto. | Tabelas `doadores` (id_doador) e `donativos` (criado_em, id_doador). | Taxa de recorrência de doadores; média de itens doados por usuário ativo em um semestre. |
 
 ## 7. Hipóteses iniciais
 
