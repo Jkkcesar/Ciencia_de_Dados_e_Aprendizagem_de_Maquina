@@ -15,8 +15,8 @@
 | Título provisório do projeto | Reembolso em Dados: a operadora estuda os próprios dados para gerar ideias e apoiar decisões |
 | Curso / disciplina | Sistemas de Informação |
 | Turma | Ciência de Dados e Aprendizagem de Máquina |
-| Equipe | Júlio César de Aguiar Nunes, Eduardo Salgueiro Evangelista |
-| Integrantes e funções iniciais | Júlio César: engenharia de dados (SQL/ETL), governança e LGPD. Eduardo: análise, modelagem e visualização. |
+| Equipe | Júlio César de Aguiar Nunes |
+| Integrantes e funções iniciais | Júlio César: engenharia de dados (SQL/ETL), governança e LGPD, análise, modelagem e visualização. |
 | Professor(a) | Gabriel |
 | Data de elaboração | 16-09-2026 |
 | Versão do documento | V03 |
@@ -220,10 +220,10 @@ O projeto usa **somente dados da própria operadora**. Dados externos (por exemp
 |---|---|---|---|---|
 | Base tratada | Consulta SQL versionada, com tratamento de datas, enriquecimento e pseudonimização. | Script SQL e tabela analítica | Júlio César | Sem identificadores diretos, chaves validadas e aprovação do DPO. |
 | Dicionário de dados e classificação LGPD | Descrição e tratamento de cada coluna. | Documento / planilha | Júlio César | 100% das colunas classificadas. |
-| Análise exploratória | Indicadores de prazo, valor, glosa, motivos e tendência. | Notebook / relatório | Eduardo Salgueiro | Perguntas 1 a 6 respondidas com agregados seguros. |
+| Análise exploratória | Indicadores de prazo, valor, glosa, motivos e tendência. | Notebook / relatório | Júlio César | Perguntas 1 a 6 respondidas com agregados seguros. |
 | Banco de ideias e hipóteses | Achados transformados em ideias, priorizadas por impacto e esforço. | Documento / matriz | Equipe | Validado com as áreas de reembolso e auditoria. |
-| Modelos de apoio | Previsão de atraso, de tempo e anomalias. | Notebooks e artefatos | Eduardo Salgueiro | Superar a linha de base em teste temporal. |
-| Painel | Indicadores agregados e escore de risco por segmento. | Power BI | Eduardo / Júlio | Sem dados pessoais e com RLS. |
+| Modelos de apoio | Previsão de atraso, de tempo e anomalias. | Notebooks e artefatos | Júlio César | Superar a linha de base em teste temporal. |
+| Painel | Indicadores agregados e escore de risco por segmento. | Power BI | Júlio César | Sem dados pessoais e com RLS. |
 | Relatório final | Método, resultados, limitações, *model card* e riscos éticos. | PDF / apresentação | Equipe | Aprovação do professor e da gestão. |
 
 ## 11. Critérios de sucesso
@@ -241,12 +241,12 @@ O projeto usa **somente dados da própria operadora**. Dados externos (por exemp
 
 | Etapa | Atividades principais | Responsável(is) | Prazo | Dependências |
 |---|---|---|---|---|
-| 1. Definição | Alinhar problema, escopo, perguntas, hipóteses e base legal com o DPO. | Júlio / Eduardo | Semanas 1 e 2 | Nenhuma |
+| 1. Definição | Alinhar problema, escopo, perguntas, hipóteses e base legal com o DPO. | Júlio César | Semanas 1 e 2 | Nenhuma |
 | 2. Obtenção dos dados | Adaptar a consulta (minimização e pseudonimização), extrair e documentar. | Júlio César | Semanas 3 e 4 | Etapa 1 e DPO |
-| 3. Preparação dos dados | Perfilamento, tratamento de nulos e datas, variáveis e agregação por guia. | Júlio / Eduardo | Semanas 5 e 6 | Etapa 2 |
-| 4. Exploração e ideação | Análise exploratória, segmentação, hipóteses e banco de ideias. | Eduardo / Júlio | Semanas 7 e 8 | Etapa 3 |
-| 5. Modelagem | Linha de base, modelos, anomalias e explicabilidade. | Eduardo Salgueiro | Semanas 9 e 10 | Etapa 4 |
-| 6. Validação | Validação temporal, viés, revisão com as áreas e auditoria de privacidade. | Júlio / Eduardo | Semana 11 | Etapa 5 |
+| 3. Preparação dos dados | Perfilamento, tratamento de nulos e datas, variáveis e agregação por guia. | Júlio César | Semanas 5 e 6 | Etapa 2 |
+| 4. Exploração e ideação | Análise exploratória, segmentação, hipóteses e banco de ideias. | Júlio César | Semanas 7 e 8 | Etapa 3 |
+| 5. Modelagem | Linha de base, modelos, anomalias e explicabilidade. | Júlio César | Semanas 9 e 10 | Etapa 4 |
+| 6. Validação | Validação temporal, viés, revisão com as áreas e auditoria de privacidade. | Júlio César | Semana 11 | Etapa 5 |
 | 7. Comunicação | Painel, *model card*, relatório e apresentação. | Equipe | Semana 12 | Etapa 6 |
 
 ## 13. Riscos do projeto
@@ -257,17 +257,16 @@ O projeto usa **somente dados da própria operadora**. Dados externos (por exemp
 | Acesso aos dados negado ou atrasado. | Média | Alto | Solicitar cedo e ter dados sintéticos como plano B. | Equipe |
 | Qualidade dos dados (datas inválidas, duplicidades, guias em aberto). | Alta | Médio | Regras documentadas e perfilamento. | Júlio César |
 | Dupla contagem por causa da granularidade de item. | Média | Alto | Agregar por guia antes de somar e reconciliar. | Júlio César |
-| Vazamento de informação no modelo (variáveis posteriores ao evento). | Média | Alto | Usar só variáveis disponíveis no momento da previsão. | Eduardo Salgueiro |
+| Vazamento de informação no modelo (variáveis posteriores ao evento). | Média | Alto | Usar só variáveis disponíveis no momento da previsão. | Júlio César |
 | Ideias sem aderência ao negócio ou sem adoção. | Média | Médio | Validar com as áreas e priorizar por impacto e esforço. | Equipe / Gestão |
-| Viés ou uso indevido do modelo. | Baixa/Média | Alto | Análise por segmento, uso como apoio e revisão humana. | Eduardo / Gestão |
-| Mudança de regras (*concept drift*). | Média | Médio | Monitorar e retreinar. | Eduardo Salgueiro |
+| Viés ou uso indevido do modelo. | Baixa/Média | Alto | Análise por segmento, uso como apoio e revisão humana. | Júlio César / Gestão |
+| Mudança de regras (*concept drift*). | Média | Médio | Monitorar e retreinar. | Júlio César |
 
 ## 14. Organização da equipe
 
 | Integrante | Papel principal | Responsabilidades | Apoio necessário |
 |---|---|---|---|
-| Júlio César de Aguiar Nunes | Engenharia de dados e governança | Consulta SQL, pseudonimização, dicionário, qualidade, LGPD e documentação. | DPO, TI e orientação. |
-| Eduardo Salgueiro Evangelista | Análise e modelagem | Exploração, hipóteses, modelos, explicabilidade e painel. | Especialistas de reembolso e orientação. |
+| Júlio César de Aguiar Nunes | Engenharia de dados, governança, análise e modelagem | Consulta SQL, pseudonimização, dicionário, qualidade, LGPD, exploração, hipóteses, modelos, explicabilidade, painel e documentação. | DPO, TI, especialistas de reembolso e orientação. |
 
 ## 15. Validação da definição do projeto
 
@@ -288,7 +287,7 @@ Antes da entrega, confirme:
 
 | Responsável | Validação / observação | Data |
 |---|---|---|
-| Representante da equipe (Júlio César / Eduardo Salgueiro) | | |
+| Representante da equipe (Júlio César) | | |
 | Professor(a) / orientador(a) (Gabriel) | | |
 | Encarregado de dados (DPO) | Parecer sobre base legal, minimização e pseudonimização. | |
 
