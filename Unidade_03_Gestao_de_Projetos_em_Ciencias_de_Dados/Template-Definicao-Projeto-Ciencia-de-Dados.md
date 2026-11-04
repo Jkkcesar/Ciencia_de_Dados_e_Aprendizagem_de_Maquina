@@ -15,8 +15,8 @@
 | Título provisório do projeto | Reembolso em Dados: onde agir para reduzir o reembolso, fortalecer o uso da rede credenciada e diminuir o custo assistencial |
 | Curso / disciplina | Sistemas de Informação |
 | Turma | Ciência de Dados e Aprendizagem de Máquina |
-| Equipe | Júlio César de Aguiar Nunes |
-| Integrantes e funções iniciais | Júlio César: engenharia de dados (SQL/ETL), governança e LGPD, análise, modelagem e visualização. |
+| Equipe | Júlio César de Aguiar Nunes/ Eduardo Salgueiro Evangelista  |
+| Integrantes e funções iniciais | Júlio César: engenharia de dados (SQL/ETL), governança e LGPD.Eduardo Salgueiro Evangelista: análise, modelagem e visualização. |
 | Professor(a) | Gabriel |
 | Data de elaboração | 16-09-2026 |
 | Versão do documento | V04 |
