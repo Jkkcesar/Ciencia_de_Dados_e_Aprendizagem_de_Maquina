@@ -4,30 +4,23 @@ WITH BaseTratamento AS
         ============================================================
         CTE 1: BaseTratamento
         ============================================================
-
         Objetivo:
         1. Ler os registros da tabela fato.
         2. Converter DTAFINALIZACAO para texto apenas uma vez.
         3. Evitar a repetição de TRIM e CAST durante o tratamento.
         4. Preservar a granularidade original dos itens pagos.
+        * DADOS SENSÍVEIS E PII REMOVIDOS PARA ADEQUAÇÃO À LGPD *
     */
-
     SELECT
         f.UF,
         f.UFATENDIMENTO,
         f.NROGSP,
         f.NROGSPVINCULADA,
         f.TIPOGSPVINCULADA,
-        f.NMEBENEFICIARIO,
         f.NMEFORMAREEMBOLSO,
         f.DTASOLICITACAOGUIA,
 
-        /*
-            Conversão realizada apenas uma vez.
-
-            Essa coluna é técnica e não será apresentada
-            no resultado final enviado ao Power BI.
-        */
+        /* Conversão técnica (não vai para o Power BI) */
         TRIM(
             CAST(f.DTAFINALIZACAO AS VARCHAR)
         ) AS DataFinalizacaoTexto,
@@ -44,20 +37,13 @@ WITH BaseTratamento AS
         f.VLRPAGOITEM,
         f.QTDSERVICO,
         f.CIDADEUFATENDIMENTO,
-        f.NROCPFCNPJCONTRATADOEXECUTANTE,
-        f.NMECONTRATADOEXECUTANTE,
-        f.NmeTermo,
-        f.NroPrtAnestesico,
         f.DTA_ATENDIMENTO,
-        f.CID,
-        f.NroCIBPaciente,
         f.SkMotivoDecisaoReembolso,
         f.SkConveniada,
         f.SkEspecialidadeAtendimento,
         f.SkPlano,
         f.SkTipoReembolso,
         f.SkCanalSolicitacao,
-        f.NroInsConselho,
         f.CodCBO
 
     FROM stg_prata.fato_reembolso_itens_pagos AS f
@@ -69,101 +55,24 @@ BaseDataTratada AS
         ============================================================
         CTE 2: BaseDataTratada
         ============================================================
-
-        Objetivo:
-        Converter DTAFINALIZACAO para o tipo DATE.
-
-        Tratamentos realizados:
-
-        NULL                  -> NULL
-        vazio                 -> NULL
-        0                     -> NULL
-        00000000              -> NULL
-        19000101              -> NULL
-        1900-01-01            -> NULL
-        20260804              -> 2026-08-04
-        2026-08-04            -> 2026-08-04
-        2026-08-04 00:00:00   -> 2026-08-04
-        valor inválido        -> NULL
+        Objetivo: Converter DTAFINALIZACAO para o tipo DATE.
     */
-
     SELECT
         f.UF,
         f.UFATENDIMENTO,
         f.NROGSP,
         f.NROGSPVINCULADA,
         f.TIPOGSPVINCULADA,
-        f.NMEBENEFICIARIO,
         f.NMEFORMAREEMBOLSO,
         f.DTASOLICITACAOGUIA,
 
         CASE
-            /*
-                Se o valor original for nulo,
-                o resultado permanecerá nulo.
-            */
-            WHEN f.DataFinalizacaoTexto IS NULL
-                THEN CAST(NULL AS DATE)
-
-            /*
-                Valores considerados inválidos ou utilizados
-                como datas-padrão devem ser transformados em NULL.
-            */
-            WHEN f.DataFinalizacaoTexto IN
-                 (
-                     '',
-                     '0',
-                     '00000000',
-                     '19000101',
-                     '1900-01-01'
-                 )
-                THEN CAST(NULL AS DATE)
-
-            /*
-                Trata datas no formato AAAAMMDD.
-
-                Exemplo:
-                20260804 -> 2026-08-04
-            */
-            WHEN REGEXP_LIKE(
-                     f.DataFinalizacaoTexto,
-                     '^[0-9]{8}$'
-                 )
-                THEN CAST(
-                    TRY(
-                        DATE_PARSE(
-                            f.DataFinalizacaoTexto,
-                            '%Y%m%d'
-                        )
-                    ) AS DATE
-                )
-
-            /*
-                Trata datas no formato AAAA-MM-DD.
-
-                Também trata timestamps iniciados por uma data.
-
-                Exemplos:
-                2026-08-04
-                2026-08-04 00:00:00
-                2026-08-04T00:00:00
-            */
-            WHEN REGEXP_LIKE(
-                     f.DataFinalizacaoTexto,
-                     '^[0-9]{4}-[0-9]{2}-[0-9]{2}'
-                 )
-                THEN TRY_CAST(
-                    SUBSTR(
-                        f.DataFinalizacaoTexto,
-                        1,
-                        10
-                    ) AS DATE
-                )
-
-            /*
-                Qualquer formato não reconhecido será convertido
-                em NULL para não interromper a consulta.
-            */
+            WHEN f.DataFinalizacaoTexto IS NULL THEN CAST(NULL AS DATE)
+            WHEN f.DataFinalizacaoTexto IN ('', '0', '00000000', '19000101', '1900-01-01') THEN CAST(NULL AS DATE)
+            WHEN REGEXP_LIKE(f.DataFinalizacaoTexto, '^[0-9]{8}$') 
+                THEN CAST(TRY(DATE_PARSE(f.DataFinalizacaoTexto, '%Y%m%d')) AS DATE)
+            WHEN REGEXP_LIKE(f.DataFinalizacaoTexto, '^[0-9]{4}-[0-9]{2}-[0-9]{2}') 
+                THEN TRY_CAST(SUBSTR(f.DataFinalizacaoTexto, 1, 10) AS DATE)
             ELSE CAST(NULL AS DATE)
         END AS DTAFINALIZACAO,
 
@@ -179,20 +88,13 @@ BaseDataTratada AS
         f.VLRPAGOITEM,
         f.QTDSERVICO,
         f.CIDADEUFATENDIMENTO,
-        f.NROCPFCNPJCONTRATADOEXECUTANTE,
-        f.NMECONTRATADOEXECUTANTE,
-        f.NmeTermo,
-        f.NroPrtAnestesico,
         f.DTA_ATENDIMENTO,
-        f.CID,
-        f.NroCIBPaciente,
         f.SkMotivoDecisaoReembolso,
         f.SkConveniada,
         f.SkEspecialidadeAtendimento,
         f.SkPlano,
         f.SkTipoReembolso,
         f.SkCanalSolicitacao,
-        f.NroInsConselho,
         f.CodCBO
 
     FROM BaseTratamento AS f
@@ -204,22 +106,14 @@ BaseReembolso AS
         ============================================================
         CTE 3: BaseReembolso
         ============================================================
-
-        Objetivo:
-        Enriquecer os itens pagos com os atributos descritivos
-        das tabelas dimensionais.
-
-        Os LEFT JOINs preservam o registro da tabela fato mesmo
-        quando não existe correspondência na dimensão.
+        Objetivo: Enriquecer itens pagos com atributos descritivos dimensionais.
     */
-
     SELECT
         f.UF,
         f.UFATENDIMENTO,
         f.NROGSP,
         f.NROGSPVINCULADA,
         f.TIPOGSPVINCULADA,
-        f.NMEBENEFICIARIO,
         f.NMEFORMAREEMBOLSO,
         f.DTASOLICITACAOGUIA,
         f.DTAFINALIZACAO,
@@ -235,108 +129,43 @@ BaseReembolso AS
         f.VLRPAGOITEM,
         f.QTDSERVICO,
         f.CIDADEUFATENDIMENTO,
-        f.NROCPFCNPJCONTRATADOEXECUTANTE,
-        f.NMECONTRATADOEXECUTANTE,
-        f.NmeTermo,
-        f.NroPrtAnestesico,
         f.DTA_ATENDIMENTO,
-        f.CID,
-        f.NroCIBPaciente,
         f.SkMotivoDecisaoReembolso,
         f.SkConveniada,
         f.SkEspecialidadeAtendimento,
         f.SkPlano,
         f.SkTipoReembolso,
         f.SkCanalSolicitacao,
-        f.NroInsConselho,
         f.CodCBO,
 
-        /*
-            Informações descritivas provenientes das dimensões.
-        */
-        c.NmeCanalSolicitacao
-            AS canal_solicitacao,
-
-        e.DesEspAtendimento
-            AS especialidade,
-
-        m.NmeMotivoDecisaoReembolso
-            AS motivo_decisao,
-
-        n.NmeConveniada
-            AS conveniada,
-
-        p.NmePlano
-            AS plano,
-
-        t.NmeTipoReembolso
-            AS tipo_reembolso
+        /* Informações descritivas */
+        c.NmeCanalSolicitacao AS canal_solicitacao,
+        e.DesEspAtendimento AS especialidade,
+        m.NmeMotivoDecisaoReembolso AS motivo_decisao,
+        n.NmeConveniada AS conveniada,
+        p.NmePlano AS plano,
+        t.NmeTipoReembolso AS tipo_reembolso
 
     FROM BaseDataTratada AS f
 
-    /*
-        Dimensão do canal pelo qual a solicitação
-        de reembolso foi registrada.
-    */
     LEFT JOIN stg_prata.dim_canal_solicitacao AS c
-        ON f.SkCanalSolicitacao =
-           c.SkCanalSolicitacao
-
-    /*
-        Dimensão da especialidade relacionada
-        ao atendimento realizado.
-    */
+        ON f.SkCanalSolicitacao = c.SkCanalSolicitacao
     LEFT JOIN stg_prata.dim_especialidade_atendimento AS e
-        ON f.SkEspecialidadeAtendimento =
-           e.SkEspecialidadeAtendimento
-
-    /*
-        Dimensão do motivo utilizado na decisão
-        do processo de reembolso.
-    */
+        ON f.SkEspecialidadeAtendimento = e.SkEspecialidadeAtendimento
     LEFT JOIN stg_prata.dim_motivo_decisao_reembolso AS m
-        ON f.SkMotivoDecisaoReembolso =
-           m.SkMotivoDecisaoReembolso
-
-    /*
-        Dimensão da conveniada vinculada ao beneficiário
-        ou ao processo de reembolso.
-    */
+        ON f.SkMotivoDecisaoReembolso = m.SkMotivoDecisaoReembolso
     LEFT JOIN prata.dim_conveniada AS n
-        ON f.SkConveniada =
-           n.SkConveniada
-
-    /*
-        Dimensão do plano do beneficiário.
-    */
+        ON f.SkConveniada = n.SkConveniada
     LEFT JOIN prata.dim_plano AS p
-        ON f.SkPlano =
-           p.SkPlano
-
-    /*
-        Dimensão correspondente ao tipo de reembolso.
-    */
+        ON f.SkPlano = p.SkPlano
     LEFT JOIN stg_prata.dim_tipo_reembolso AS t
-        ON f.SkTipoReembolso =
-           t.SkTipoReembolso
+        ON f.SkTipoReembolso = t.SkTipoReembolso
 )
 
 /*
     ================================================================
     RESULTADO FINAL
     ================================================================
-
-    O DISTINCT substitui o GROUP BY anterior.
-
-    Isso é possível porque:
-
-    1. Todas as colunas detalhadas participavam do GROUP BY.
-    2. NROGSP também participava do GROUP BY.
-    3. VLRPAGOITEM também participava do GROUP BY.
-    4. COUNT(DISTINCT NROGSP) retornava apenas 1 ou 0.
-    5. SUM(DISTINCT VLRPAGOITEM) retornava o próprio valor do item.
-
-    A consulta continua no nível de item pago e não no nível da guia.
 */
 SELECT DISTINCT
     b.UF,
@@ -344,7 +173,6 @@ SELECT DISTINCT
     b.NROGSP,
     b.NROGSPVINCULADA,
     b.TIPOGSPVINCULADA,
-    b.NMEBENEFICIARIO,
     b.NMEFORMAREEMBOLSO,
     b.DTASOLICITACAOGUIA,
     b.DTAFINALIZACAO,
@@ -360,61 +188,23 @@ SELECT DISTINCT
     b.VLRPAGOITEM,
     b.QTDSERVICO,
     b.CIDADEUFATENDIMENTO,
-    b.NROCPFCNPJCONTRATADOEXECUTANTE,
-    b.NMECONTRATADOEXECUTANTE,
-    b.NmeTermo,
-    b.NroPrtAnestesico,
     b.DTA_ATENDIMENTO,
-    b.CID,
-    b.NroCIBPaciente,
     b.SkMotivoDecisaoReembolso,
     b.SkConveniada,
     b.SkEspecialidadeAtendimento,
     b.SkPlano,
     b.SkTipoReembolso,
     b.SkCanalSolicitacao,
-    b.NroInsConselho,
     b.CodCBO,
 
-    /*
-        Na consulta anterior, NROGSP fazia parte do GROUP BY.
-
-        Por esse motivo:
-        - guia preenchida retornava 1;
-        - guia nula retornava 0.
-
-        O comportamento foi preservado para não alterar
-        os resultados utilizados no Power BI.
-    */
     CAST(
         CASE
-            WHEN b.NROGSP IS NOT NULL
-                THEN 1
+            WHEN b.NROGSP IS NOT NULL THEN 1
             ELSE 0
         END AS BIGINT
     ) AS Guias,
 
-    /*
-        Na consulta anterior, VLRPAGOITEM fazia parte
-        do próprio GROUP BY.
-
-        Portanto:
-
-        SUM(DISTINCT VLRPAGOITEM)
-
-        produzia, dentro de cada agrupamento,
-        o próprio valor do item.
-
-        O alias Valor_pagos foi preservado para evitar
-        quebra de medidas, visuais ou etapas do Power Query.
-    */
     b.VLRPAGOITEM AS Valor_pagos,
-
-    /*
-        Mantém a coluna adicional utilizada pelo Power Query.
-
-        Ela continua sendo entregue como DATE e não como VARCHAR.
-    */
     b.DTAFINALIZACAO AS Data_finalizacao,
 
     b.canal_solicitacao,
