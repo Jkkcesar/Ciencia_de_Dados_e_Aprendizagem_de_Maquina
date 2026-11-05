@@ -21,7 +21,7 @@ Use o [notebook de apoio](notebooks/laboratorio.ipynb) ou o [CSV sintético](dad
 | Ambiente e data | Colab 29/10 |
 | Versões das ferramentas/bibliotecas | **Scikit-Learn (versão atualizada no Colab), Pandas** |
 | Semente aleatória | **random_state=42** |
-| Caminho do notebook executado ou fluxo Orange | https://colab.research.google.com/drive/1py4TqeY9Tb9KXaMc1bYg6-0sbMFb3WRb#scrollTo=50be2874 |
+| Caminho do notebook executado ou fluxo Orange | https://colab.research.google.com/github/eduSalg/Ciencia_Dados_Aprendizagem_Maquina/blob/main/aprendizado-maquina-udf/notebooks_laboratorio_equipe.ipynb |
 | Origem dos dados e condição sintética | **CSV educacional com 600 registros sintéticos (gerados artificialmente, sem validade empírica real)** |
 
 ## 2. Problema e preparação
@@ -105,7 +105,7 @@ Explique por que R² não é porcentagem de acertos: **Em problemas de regressã
 
 ## 7. Evidências e conclusão
 
-- Link relativo do notebook/fluxo: **[[notebooks_laboratorio_equipe.ipynb](https://colab.research.google.com/drive/1py4TqeY9Tb9KXaMc1bYg6-0sbMFb3WRb#scrollTo=WMOOWSoh8czS)**
+- Link relativo do notebook/fluxo: **[[notebooks_laboratorio_equipe.ipynb](https://colab.research.google.com/github/eduSalg/Ciencia_Dados_Aprendizagem_Maquina/blob/main/aprendizado-maquina-udf/notebooks_laboratorio_equipe.ipynb)**
 - Links das imagens, se houver: **---**
 - Principal aprendizado: **A necessidade de empacotar transformações (como imputação da mediana) juntamente com o estimador dentro de um `Pipeline` e usar validação cruzada (`StratifiedKFold`) para selecionar hiperparâmetros com robustez, sem tocar nos 25% de teste.**
 - Limitações de generalização e vieses possíveis: **O modelo não tem validade alguma para o mundo real, visto que os 600 registros são sintéticos e fabricados no código. Aplicá-lo a dados reais seria inválido.**
