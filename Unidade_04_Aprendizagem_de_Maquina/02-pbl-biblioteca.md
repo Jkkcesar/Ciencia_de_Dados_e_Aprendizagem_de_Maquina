@@ -51,7 +51,7 @@ Uma biblioteca universitária enfrenta filas em horários específicos e baixa u
 
 | Integrante | Papel | Contribuição |
 | --- | --- | --- |
-| **Eduardo Salgueiro** | **Engenharia de Dados e Modelagem** | **Definição técnica dos atributos, variável alvo, métricas de avaliação do modelo preditivo e estruturação de dados.** |
+| **Júlio César de Aguiar Nunes** | **Engenharia de Dados e Modelagem** | **Definição técnica dos atributos, variável alvo, métricas de avaliação do modelo preditivo e estruturação de dados.** |
 | **Julio Cesar** | **Análise de Negócios e Requisitos** | **Formulação das perguntas de negócio, delimitação do problema e restrições de privacidade e ética.** |
 
 ## Conclusão da equipe
