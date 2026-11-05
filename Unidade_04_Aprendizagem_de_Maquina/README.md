@@ -9,9 +9,9 @@ Este repositório registra as atividades de introdução ao Machine Learning e d
 
 ## Identificação do repositório
 
-- Estudante ou equipe: **PREENCHER**
-- Turma: **PREENCHER**
-- Repositório: **PREENCHER**
+- Estudante ou equipe: **Julio Cesar de Aguiar Nunes**
+- Turma: **Sistemas de Informação - 2026.2**
+- Repositório: **aprendizado-maquina-udf**
 
 ## Atividades
 
